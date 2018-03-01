@@ -7,7 +7,7 @@ Tcx es un lenguaje de programación escrito en C con la librería [Flex](http://
 + GCC.
 
 ## Construir:
-Para construir e instalar el proyecto utilize el __Makefile__:
+Para construir e instalar el proyecto utilize el _Makefile_:
 ```sh
 $ make
 $ (sudo) make install
