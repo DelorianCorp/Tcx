@@ -1,0 +1,5 @@
+#!/usr/bin/tcx
+#Script Hola Mundo en Tcx
+inicio:
+echo Hola Mundo;
+fin;
