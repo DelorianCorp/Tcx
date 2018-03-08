@@ -9,6 +9,7 @@ WHITESPACE  [ \t]
 %%
 
 echo        {printf("");}
+version     {fprintf(yyout, "Tcx %s 18 201838 15:45 0.1.1\n", yytext);}
 inicio      {printf("");}
 fin         {fprintf(yyout, " %d", yylineno);}
 
