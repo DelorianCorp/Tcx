@@ -1,0 +1,15 @@
+#!/bin/bash
+
+cp -T "$1.tcx" "$1.bas"
+sed -i "1d" "$1.bas"
+sed -i 's/,/"/g' "$1.bas"
+sed -i 's/ 255/,255/g' "$1.bas"
+sed -i 's/fl;/high C.4\npause 300\nlow C.4\npause 300\nhigh C.4\npause 300\nlow C.4/g' "$1.bas"
+sed -i 's/fin;//g' "$1.bas"
+sed -i 's/;/)\npause 10/g' "$1.bas"
+sed -i 's/inicio:/pause 500/g' "$1.bas"
+sed -i 's/echo /hi2csetup i2cmaster, %11000110, i2cslow, i2cbyte\nhi2cout %11000110,(254,128,255)\npause 10\nhi2cout %11000110,("/g' "$1.bas"
+sed -i 's/#/; /g' "$1.bas"
+sed -i 's/mem /hi2csetup i2cmaster, %10100000, i2cfast, i2cbyte\nhi2cout %11000110,("/g' "$1.bas"
+cat /usr/share/lib/tcx/dc001-m/header.bas $1.bas > ./.tmp.tcx.bas.axe.dc-001-m.header
+picaxe08m2 ./.tmp.tcx.bas.axe.dc-001-m.header
