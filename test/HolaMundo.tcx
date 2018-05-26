@@ -1,5 +1,8 @@
 #!/usr/bin/tcx
-#Script Hola Mundo en Tcx
+#Script Hola mundo en Tcx para el DC001-M
+
 inicio:
-echo Hola Mundo;
+echo Hola Mundo, 255;
+fl;
+mem Hola Mundo,;
 fin;
