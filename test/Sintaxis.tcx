@@ -1,6 +1,7 @@
-#!/usr/bin/tcx < Shebang que indica con que programa se tiene que abrir el script.
 #Script para explicar la sintaxis de Tcx < Comentario.
 
 inicio: #Marca el inicio de una función.
-echo Hola Mundo x2; #Función que imprime el eco de un texto en pantalla. En este caso "Hola Mundo x2"
+echo Hola Mundo x2; #Función que imprime el eco de un texto en pantalla. En este caso "Hola Mundo x2".
+fl; #Función que hace titilar la LED1.
+mem Chau mundo; #Función que escribe los bytes indicados en la EEPROM. En este caso "Chau mundo".
 fin; #Marca el fin de una función. Cuando termina una función es necesario poner el punto y coma (;) igual que arriba.
