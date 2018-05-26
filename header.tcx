@@ -1,0 +1,20 @@
+#!/usr/bin/tcx
+# ************************************************************ 
+# *********************  DC001-M program *********************
+# ************************************************************ 
+#    Filename:		header.tcx								 *
+#    Date:			26/05/2018								 *
+#    File Version:	v0.1.0-beta							     *
+#    Written by:	Álvaro Torralba							 *
+#    Function:		DC001-M programs header.    			 *
+#    Last Revision:	26/05/2018								 *
+#    Target PICAXE:	08M2									 *
+#    License:		GPL-v2.0								 *
+# ************************************************************
+
+inicio:
+echo ¡Bienvenido al DC001-M!, 255;
+mem DC001-M activo y funcional.,;
+fl;
+fin;
+
